@@ -1,0 +1,44 @@
+{
+  "carros": [
+    {
+      "id": "gye-1644",
+      "marca": "Chevrolet",
+      "precio": "12000",
+      "color": "azul",
+      "placa_id": "gye-1644",
+      "anio": "2014",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGC3T7dMiWVvOCrNiealNi8FGNz0qQw3q_KlneCIW3A&s"
+      
+
+    },
+    {
+      "id": "itq-2664",
+      "marca": "p",
+      "precio": "40000",
+      "color": "a",
+      "placa_id": "itq-2664",
+      "anio": "2066",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGC3T7dMiWVvOCrNiealNi8FGNz0qQw3q_KlneCIW3A&s"
+      
+    },
+    {
+      "id": "pch-5566",
+      "marca": "JetTour",
+      "precio": "25630",
+      "color": "rojo",
+      "placa": "pch-5566",
+      "anio": "2024",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGC3T7dMiWVvOCrNiealNi8FGNz0qQw3q_KlneCIW3A&s"
+      
+    },
+    {
+      "id": "gtq-2692",
+      "placa_id": "gtq-2692",
+      "marca": "Tesla",
+      "color": "plateado",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGC3T7dMiWVvOCrNiealNi8FGNz0qQw3q_KlneCIW3A&s",
+      "anio": "2023",
+      "precio": "100000"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<h1>Busqueda por Marca de carros</h1>
+<select name="" id="" [(ngModel)] ='marca'>
+    <option value="Chevrolet">Chevrolet</option>
+    <option value="Nissan">Nissan </option>
+    <option value="Renault">Renault</option>
+    <option value="JetTour">jetTour</option>
+    <option value="Tesla">Tesla</option>
+  </select>
+@for (item of carros; track item) {
+    @if (item.marca == marca) {
+         <div class="container mt-3">
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="{{item.imagen}}" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">{{item.marca}}</h4>
+              <p class="card-text">precio:$ {{item.precio}}</p>
+              
+              <button class="btn btn-primary" [routerLink]="['/detalles',item.id]">Ver mas detalles</button>
+            </div>
+          </div>
+      </div>
+    }@else {
+    }
+   
+}
