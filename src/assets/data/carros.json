@@ -4,41 +4,45 @@
       "id": "gye-1644",
       "marca": "Chevrolet",
       "precio": "12000",
-      "color": "azul",
-      "placa_id": "gye-1644",
+      "color": "blanco",
+      "placa_id": "gye-2644",
       "anio": "2014",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGC3T7dMiWVvOCrNiealNi8FGNz0qQw3q_KlneCIW3A&s"
-      
-
-    },
-    {
+      "imagen": "https://www.bookaclassic.com.ec/content/uploads/chevrolet-camaro-quito-11ab324c04-800x600.jpeg"
+    },{
       "id": "itq-2664",
-      "marca": "p",
+      "marca": "Ford",
       "precio": "40000",
-      "color": "a",
+      "color": "azul",
       "placa_id": "itq-2664",
       "anio": "2066",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGC3T7dMiWVvOCrNiealNi8FGNz0qQw3q_KlneCIW3A&s"
-      
-    },
-    {
-      "id": "pch-5566",
-      "marca": "JetTour",
-      "precio": "25630",
-      "color": "rojo",
-      "placa": "pch-5566",
-      "anio": "2024",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGC3T7dMiWVvOCrNiealNi8FGNz0qQw3q_KlneCIW3A&s"
-      
+      "imagen": "https://fotos.perfil.com/2019/06/28/trim/1280/720/el-nuevo-ford-mustang-shelby-gt500-ofrecera-760-caballos-de-potencia-747118.jpg"
     },
     {
       "id": "gtq-2692",
-      "placa_id": "gtq-2692",
       "marca": "Tesla",
+      "precio": "100000",
       "color": "plateado",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGC3T7dMiWVvOCrNiealNi8FGNz0qQw3q_KlneCIW3A&s",
+      "placa_id": "gtq-2692",
       "anio": "2023",
-      "precio": "100000"
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGC3T7dMiWVvOCrNiealNi8FGNz0qQw3q_KlneCIW3A&s"
+    },
+    {
+      "id": "pbm-2323",
+      "marca": "JetTour",
+      "precio": "12000",
+      "color": "plomo",
+      "placa_id": "pbm-2323",
+      "anio": "2024",
+      "imagen": "https://cdn.wheel-size.com/automobile/body/jetour-x70-2023-2024-1695793594.1795986.jpg"
+    },
+    {
+      "id": "pbl-2343",
+      "marca": "Nissan",
+      "precio": "30000",
+      "color": "blanco",
+      "placa_id": "plb-2343",
+      "anio": "2024",
+      "imagen": "https://www.thextremexperience.com/wp-content/uploads/2023/10/2021-nissan-gt-r-nismo-mmp-1-1599069103.jpeg"
     }
   ]
 }

@@ -1,25 +1,47 @@
-<h1>Busqueda por Marca de carros</h1>
-<select name="" id="" [(ngModel)] ='marca'>
-    <option value="Chevrolet">Chevrolet</option>
-    <option value="Nissan">Nissan </option>
-    <option value="Renault">Renault</option>
-    <option value="JetTour">jetTour</option>
-    <option value="Tesla">Tesla</option>
-  </select>
-@for (item of carros; track item) {
-    @if (item.marca == marca) {
-         <div class="container mt-3">
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="{{item.imagen}}" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">{{item.marca}}</h4>
-              <p class="card-text">precio:$ {{item.precio}}</p>
-              
-              <button class="btn btn-primary" [routerLink]="['/detalles',item.id]">Ver mas detalles</button>
-            </div>
-          </div>
-      </div>
-    }@else {
-    }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda por Marca de Carros</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tabla-autos.component.css"> 
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Busqueda por Marca de Carros</h1>
+            <select class="custom-select" id="marca" [(ngModel)]="marca">
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Ford">Ford</option>
+                <option value="Tesla">Tesla</option>
+                <option value="JetTour">JetTour</option>
+                <option value="Nissan">Nissan</option>
+
+            </select>
+        </div>
+
    
-}
+        @for (item of carros; track item) {
+            @if (item.marca == marca) {
+                <div class="container mt-3">
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="{{item.imagen}}" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">{{item.marca}}</h4>
+                            <p class="card-text">Precio: ${{item.precio}}</p>
+                            <button class="btn btn-primary" [routerLink]="['/detalles',item.id]">Ver más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

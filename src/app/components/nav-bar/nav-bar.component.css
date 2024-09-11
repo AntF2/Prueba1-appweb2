@@ -1,0 +1,36 @@
+.navbar {
+    padding: 15px 20px;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar.scrolled {
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.shadow-sm {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

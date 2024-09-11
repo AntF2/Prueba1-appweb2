@@ -1,45 +1,57 @@
-<div class="fondo-pantalla">
-    <form>
-        <h1>Busqueda por tabla</h1>
-        <input type="text" [(ngModel)]="marca" placeholder="Ingrese una placa " [ngModelOptions]="{standalone: true}">
-       
-    </form>
-@for (item of carros; track item) {
-  @if (item.placa_id == marca) {
-    <table class="table table-dark">
-        <thead>
-          <tr>
-            <th>Marca</th>
-            <th>Placa</th>
-            <th>Color</th>
-            <th>Año</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{item.marca}}</td>
-            <td>{{item.placa_id}}</td>
-            <td>{{item.color}}</td>
-            <td>{{item.anio}}</td>
-            <td>
-                <button (click)="eliminar(item.id)">eliminar</button>
-                <button [routerLink]="['/editar',item.id]">editar</button>
-            </td>
-          </tr>
-          
-        </tbody>
-      </table>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda por Tabla</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tablagestion.component.css"> 
+</head>
+<body>
 
-  }
- 
-    
+    <div class="fondo-pantalla">
+        <form>
+            <h1>Busqueda por Tabla</h1>
+            <input type="text" [(ngModel)]="marca" placeholder="Ingrese una placa " [ngModelOptions]="{standalone: true}">
+        </form>
 
-}
-<h1>Placas por buscar </h1>
-@for (item of carros; track item) {
-  <p>{{item.placa_id}}</p>
+        
+        @for (item of carros; track item) {
+            @if (item.placa_id == marca) {
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>Marca</th>
+                            <th>Placa</th>
+                            <th>Color</th>
+                            <th>Año</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{item.marca}}</td>
+                            <td>{{item.placa_id}}</td>
+                            <td>{{item.color}}</td>
+                            <td>{{item.anio}}</td>
+                            <td>
+                                <button (click)="eliminar(item.id)" class="btn btn-danger">Eliminar</button>
+                                <button [routerLink]="['/editar',item.id]" class="btn btn-warning">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            }
+        }
 
-  
-}
+        <h1>Placas por Buscar</h1>
+        @for (item of carros; track item) {
+            <p>{{item.placa_id}}</p>
+        }
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

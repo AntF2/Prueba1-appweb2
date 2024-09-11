@@ -1,0 +1,51 @@
+.form-edit {
+    max-width: 500px;  
+    margin: 0 auto;    
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;  
+    border-radius: 8px;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.form-edit label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;  
+}
+
+.form-edit .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.form-edit .form-control:focus {
+    border-color: #007bff;  
+    outline: none;
+}
+
+.btn-save {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-save:hover {
+    background-color: #218838;  
+}

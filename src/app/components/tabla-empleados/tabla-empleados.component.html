@@ -1,23 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tabla-empleados.component.css"> 
+</head>
+<body>
 
-
-@for (item of empleados.results; track item) {
- 
-        <div class="container mt-3">
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="{{item.picture.medium}}" alt="Card image">
+    <div class="container mt-4">
+        @for (item of empleados.results; track item) {
+            <div class="card mb-4" style="width: 400px;">
+                <img class="card-img-top" src="{{item.picture.medium}}" alt="Imagen de {{item.name.first}}">
                 <div class="card-body">
-                  <h4 class="card-title">{{item.name.title}}. {{item.name.first}} {{item.name.last}}</h4>
-                  <p class="card-text">Ciudad: {{item.location.country}}</p>
-                  <p class="card-text">email: {{item.email}}</p>
-                  <p class="card-text">email: {{item.phone}}</p>
+                    <h4 class="card-title">{{item.name.title}}. {{item.name.first}} {{item.name.last}}</h4>
+                    <p class="card-text">Ciudad: {{item.location.city}}</p>
+                    <p class="card-text">Descripción: {{item.location.timezone.offset}} - {{item.location.timezone.description}}</p>
+                    <p class="card-text email">Email: {{item.email}}</p>
+                    <p class="card-text">Teléfono: {{item.phone}}</p>
                 </div>
-              </div>
-          </div>
-    
+            </div>
+        }
+    </div>
 
-         
-   
-    
-   
-}
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
